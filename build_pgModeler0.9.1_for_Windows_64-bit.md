@@ -2,7 +2,7 @@
 
 ## Intro
 
-This are the steeps tu build `pgModeler` for Windows 10 64-bit on Windows itself.
+This are the steps to build `pgModeler` for Windows 10 64-bit on Windows itself.
 The produced `pgModeler` software will also be in 64-bit.
 
 
@@ -170,6 +170,8 @@ As the time of this writing, do the following commands inside the `/build` direc
 > cp /mingw64/bin/Qt5PrintSupportd.dll .
 > cp /mingw64/bin/ssleay32.dll .
 > cp /mingw64/bin/zlib1.dll .
+> cp /mingw64/bin/libdouble-conversion.dll .
+> cp /mingw64/bin/libzstd.dll .
 ```
 <small>Note than the DLLs names may change since the writing of this tutorial.</small>
 
