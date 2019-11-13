@@ -1,4 +1,4 @@
-# Build pgModeler 0.9.1 for Windows 64-bit
+# Build pgModeler for Windows 64-bit
 
 ## Intro
 
@@ -89,7 +89,7 @@ git clone https://github.com/pgmodeler/pgmodeler.git
 cd pgmodeler
 git checkout tags/v0.9.1
 ```
-We will build the 0.9.1 version of pgModeler. If a new version is available since this How-To,
+We build the 0.9.1 version of pgModeler as example. If a new version is available since this How-To,
 you just need to change the tag accordingly. You can also try to build from `git checkout master`
 or `git checkout devel` for more up-to-date releases.
 
