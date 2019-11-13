@@ -178,6 +178,7 @@ cp /mingw64/bin/libdouble-conversion.dll .
 cp /mingw64/bin/Qt5PrintSupportd.dll .
 cp /mingw64/bin/ssleay32.dll .
 cp /mingw64/bin/zlib1.dll .
+
 ```
 <small>Note than the DLLs names may change since the writing of this tutorial.</small>
 
@@ -194,7 +195,7 @@ cd ~/pgmodeler
 ```
 and then launch the following command in the minGW 64-bit shell:
 ```
-"/c/Program Files (x86)/Inno Setup 5/ISCC.exe" ./installer/windows/pgmodeler.iss
+"/c/Program Files (x86)/Inno Setup 6/ISCC.exe" ./installer/windows/pgmodeler.iss
 ```
 
 Alternately you can also build the package with the graphical Inno Setup Compiler from your start menu.
@@ -207,3 +208,14 @@ You will have to point to the `pgmodeler.iss` file witch will be somewhere like
 Inno Setup should have create a `pgmodeler.exe` file inside  `C:\msys64\home\myusername\pgmodeler`.
 This is the installer executable. Just run it to install PgModeler.
 
+
+## Automated installer generation - pgModelerInstallerGenerator.sh
+
+Assuming you have "Inno Setup 6" installed in "C:\Program Files (x86)\Inno Setup 6" -default location-, this script will generate an installer from the selected version / tag, which you can select by passing -t=$version (--target=$version)" to the script:
+```
+./pgModelerInstallerGenerator.sh -t=v0.9.2
+or
+./pgModelerInstallerGenerator.sh --target=master
+```
+Output will be located at pgmodeler folder (/home/$USER/pgmodeler/pgmodeler.exe)
+Note this is a really basic script, any improvements are welcome.
