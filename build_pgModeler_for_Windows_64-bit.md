@@ -211,6 +211,8 @@ This is the installer executable. Just run it to install PgModeler.
 
 ## Automated installer generation - pgModelerInstallerGenerator.sh
 
+* [pgModeler Installer](https://github.com/titoshadow/miniwark-howtos/blob/master/pgModelerInstallerGenerator.sh)
+
 Assuming you have "Inno Setup 6" installed in "C:\Program Files (x86)\Inno Setup 6" -default location-, this script will generate an installer from the selected version / tag, which you can select by passing -t=$version (--target=$version)" to the script:
 ```
 ./pgModelerInstallerGenerator.sh -t=v0.9.2
