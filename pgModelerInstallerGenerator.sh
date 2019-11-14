@@ -100,6 +100,6 @@ cp /mingw64/bin/libzstd.dll /mingw64/bin/libglib-2.0-0.dll /mingw64/bin/libdoubl
 
 cd ..
 
-"/c/Program Files (x86)/Inno Setup 6/ISCC.exe" ./installer/windows/pgmodeler.iss
+"/c/Program Files (x86)/Inno Setup 6/ISCC.exe" /Q ./installer/windows/pgmodeler.iss
 
 echo -e "\nOK !"
