@@ -2,13 +2,13 @@
 
 ## Intro
 
-This are the steeps tu build `pgModeler` for Windows 10 64-bit on Windows itself.
+These are the steps to build `pgModeler` for Windows 10 64-bit on Windows itself.
 The produced `pgModeler` software will also be in 64-bit.
 
 
 ## Dependencies install
 
-Before building `pgModeler` we need to install the build tool-chain and dependencies.
+Before building `pgModeler`, we need to install the build tool-chain and dependencies.
 We will use the [MSYS2](http://www.msys2.org/) building platform.
 
 MSYS2 will provide MinGW, gcc and the Qt library.
